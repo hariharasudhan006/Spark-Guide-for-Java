@@ -15,9 +15,9 @@ spark-submit --master local[*] \
 ![example running screenshot](example_local_standalone.png)
 
 ### master url explanation
-| url                   | explanation                                                                                           |
-|:----------------------|:------------------------------------------------------------------------------------------------------|
-| local                 | runs spark jobs locally with single worker thread.                                                    |
-| local[n]              | runs spark jobs locally with n workers. Usually n can be number matching no. of cores in the machine. |
-| local[*]              | runs spark jobs locally with as many worker as the logical cores in your system.                      |
-| spark://<host>:<port> | runs spark jobs in remote master.                                                                     |
+| url                  | explanation                                                                                           |
+|:---------------------|:------------------------------------------------------------------------------------------------------|
+| local                | runs spark jobs locally with single worker thread.                                                    |
+| local[n]             | runs spark jobs locally with n workers. Usually n can be number matching no. of cores in the machine. |
+| local[*]             | runs spark jobs locally with as many worker as the logical cores in your system.                      |
+| spark://host-ip:port | runs spark jobs in remote master.                                                                     |

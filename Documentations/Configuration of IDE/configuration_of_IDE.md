@@ -1,9 +1,9 @@
 # Configuration of IDE
 Follow the below step to set up your favorite IDE to work with apache spark.
 Open up your favorite IDE like (VS code, IntelliJ, etc). My choice is IntelliJ.
-## Create new Project with maven.
+## Step 1 - Create new Project with maven.
 ![project creation image](Project_creation.png)
-### Add dependencies
+### Step 2 - Add dependencies
 add the following dependencies block to pom.xml file
 ~~~
 <dependencies>

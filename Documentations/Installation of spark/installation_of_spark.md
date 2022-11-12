@@ -3,7 +3,7 @@ Follow up the step carefully to install Apache spark in Ubuntu.
 I personally recommend to work with linux environment especially Ubuntu.
 ### step 1 - update your system.
 ~~~
-apt-get update.
+apt-get update
 ~~~
 ![update screenshot](update.png)
 

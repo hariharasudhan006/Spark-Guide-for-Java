@@ -20,4 +20,4 @@ spark-submit --master local[*] \
 | local                    | runs spark jobs locally with single worker thread.                                                    |
 | local[n]                 | runs spark jobs locally with n workers. Usually n can be number matching no. of cores in the machine. |
 | local[*]                 | runs spark jobs locally with as many worker as the logical cores in your system.                      |
-| spark://<127.0.0.1:7077> | runs spark jobs in remote master.                                                                     |
+| spark://<127.0.0.1:7077> | runs spark jobs in remote master. note replace <127.0.0.1:7077> with your remote master url.          |

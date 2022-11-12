@@ -82,3 +82,13 @@ authentication is need to run spark jobs.
 export MYTOKEN=$(microk8s kubectl create token sparkserviceaccount)
 ~~~
 ![service account token](microk8s_cluster_service_account_token.png)
+
+you can see and manage kubernetes cluster accessing kubernetes dashboard
+
+~~~
+microk8s dashboard-proxy
+~~~
+
+the above command will print a token copy the token which is required when logging in into dashboard.
+
+![dashboard screenshot](microk8s_dashboard.png)

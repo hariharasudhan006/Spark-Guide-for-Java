@@ -30,6 +30,8 @@ microk8s status --wait-ready
 this command will wait until the microk8s status comes to running.
 if the above command stuck and waiting forever do uninstall microk8s and reinstall.
 
+### step 2 - Make cluster
+
 #### adding workers host name to master
 Do this step only in node which want to be your cluster master. don't do this all nodes.
 To add the workers to cluster the master must know their addresses.
@@ -51,8 +53,9 @@ if you want to add another node run the above command again and copy the second 
 
 ![microk8s join node](microk8s_join_node.png)
 
-**Note: Do not paste the same join command in more than one worker. it won't work.**
-**Note: Do not add nodes with same name. each worker should be with unique name**
+**Note**
+1. Do not paste the same join command in more than one worker. it won't work.
+2. Do not add nodes with same name. each worker should be with unique name
 
 #### command to show nodes in the cluster.
 ~~~
@@ -63,6 +66,8 @@ microk8s kubectl get no
 **Note: the above command only works in cluster master**
 
 Now we are having a kubernetes cluster. To run spark application in kubernetes cluster we need a service account.
+
+### step 3 - create service account
 
 #### to create service account.
 run the below command to create a service account.
